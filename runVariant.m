@@ -1,13 +1,14 @@
 function success =  runVariant( variant, comment )
 
-fName = [ getFileNameRoot( variant, comment ), '.flac' ];
+fRoot = getFileNameRoot( variant, comment );
+fName = [ fRoot, '.flac' ];
 
 success = 0;
 if ~recordVariant( fName )
 	error('Could not record.')
 end
 
-if ~plotVariant( fName )
+if ~plotVariant( fRoot )
 	error('Could not plot.')
 end
 
