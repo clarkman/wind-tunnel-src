@@ -20,7 +20,7 @@ windSpeeds = [ 0, 26, 32 ];
 % e.g.
 variantName = { 'Large Macaron, Tall, 3” foam closed, Inner Fine, Outer Large, Nylon No, 45Hz, 2018-02-27 08:00:00' };
 
-varInitSM{1} = { groupDesig{1}, heightDesig{1}, foamDesig{7}, meshDesig{8}, windDesig{2} };
+varInitSM{1} = { groupDesig{1}, heightDesig{1}, foamDesig{2}, meshDesig{8}, windDesig{2} };
 varInitSM{2} = { groupDesig{1}, heightDesig{1}, foamDesig{2}, meshDesig{8}, windDesig{3} };
 varInitSM{3} = { groupDesig{1}, heightDesig{1}, foamDesig{1}, meshDesig{8}, windDesig{2} };
 varInitSM{4} = { groupDesig{1}, heightDesig{1}, foamDesig{1}, meshDesig{8}, windDesig{3} };
