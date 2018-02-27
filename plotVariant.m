@@ -10,6 +10,8 @@ figure;
 plot(td);
 set(gca,'YLim',[-1.0, 1.0])
 title(plotTitle)
+set(gca,'FontSize',14)
+set(gcf, 'OuterPosition', [ 400 500 1200 900 ] )
 print( gcf,'-djpeg100', tsName );
 close('all');
 
@@ -22,6 +24,8 @@ aa = get(gca,'YLim');
 set(gca,'XScale','log');
 set(gca,'YScale','log');
 title(plotTitle)
+set(gca,'FontSize',14)
+set(gcf, 'OuterPosition', [ 400 500 1200 900 ] )
 print( gcf,'-djpeg100', psName );
 close('all');
 
@@ -31,6 +35,8 @@ plotTitle = [ 'Spectrogram of: ', td.title ];
 figure;
 plot(log10(spectrogram(td,fftL,0.8675)))
 title(plotTitle)
+set(gca,'FontSize',14)
+set(gcf, 'OuterPosition', [ 400 500 1200 900 ] )
 print( gcf,'-djpeg100', sgramName );
 close('all');
 
