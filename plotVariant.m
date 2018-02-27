@@ -2,7 +2,7 @@ function plotVariant( variant )
 
 % Load uadio file
 [ f, fRoot ] = getFileNameRoot( variant );
-inPath  = '/Users/cuz/Desktop/Projects/SST/Wind/WindTunnel/2018-02-27/';
+inPath  = '/Users/cuz/Desktop/Projects/SST/Wind/WindTunnel/2018-02-27/audio/';
 var1FName = [ inPath, fRoot, '*.flac' ];
 fileName1 = dir( var1FName );
 td = loadWavTD( [ inPath, fileName1.name ] );
