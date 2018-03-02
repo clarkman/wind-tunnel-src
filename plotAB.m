@@ -3,16 +3,25 @@ function idx =  plotAB( var1, var2, idx, titl )
 [ f, var1FileName ] = getFileNameRoot(var1);
 [ f, var2FileName ] = getFileNameRoot(var2);
 
-inPath  = '/Users/cuz/Desktop/Projects/SST/Wind/WindTunnel/2018-02-27/';
+inPath  = '/Users/cuz/Desktop/Projects/SST/Wind/WindTunnel/2018-02-27/audio/';
 outPath = '/Users/cuz/Desktop/Projects/SST/Wind/WindTunnel/2018-02-27/AB/';
 
+% Find and load files
 var1FName = [ inPath, var1FileName, '*.flac' ];
 var2FName = [ inPath, var2FileName, '*.flac' ];
-
 fileName1 = dir( var1FName );
 td1 = loadWavTD( [ inPath, fileName1.name ] );
+[ group1, height1, foam1, gmesh1, hz1, dn1, inGain1, outGain1 ] = parseFileName( fileName1.name );
 fileName2 = dir( var2FName );
 td2 = loadWavTD( [ inPath, fileName2.name ] );
+[ group2, height2, foam2, gmesh2, hz2, dn2, inGain2, outGain2 ] = parseFileName( fileName2	.name );
+
+% Condition signals
+linGain1 = 10 ^ ( inGain1 / 20.0 );
+td1.samples = td1.samples ./ linGain1;
+linGain2 = 10 ^ ( inGain2 / 20.0 );
+td2.samples = td2.samples ./ linGain2;
+
 
 fftL = 4096;
 figure;
