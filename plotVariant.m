@@ -3,7 +3,7 @@ function [ rmst, stdev, skewd ] = plotVariant( variant )
 % Load audio file
 [ f, fRoot ] = getFileNameRoot( variant );
 inPath  = '/Users/cuz/Desktop/Projects/SST/Wind/WindTunnel/2018-02-27/audio/';
-var1FName = [ inPath, fRoot, '*.flac' ];
+var1FName = [ inPath, fRoot, '*.flac' ]
 fileName1 = dir( var1FName );
 td = loadWavTD( [ inPath, fileName1.name ] );
 [ group, height, foam, gmesh, hz, dn, inGain, outGain ] = parseFileName( fileName1.name );
