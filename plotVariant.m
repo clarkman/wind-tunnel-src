@@ -1,4 +1,4 @@
-function [ rms, stdev, skew ] = plotVariant( variant )
+function [ rmst, stdev, skewd ] = plotVariant( variant )
 
 % Load audio file
 [ f, fRoot ] = getFileNameRoot( variant );
@@ -11,6 +11,10 @@ td = loadWavTD( [ inPath, fileName1.name ] );
 % Now condition signal
 linGain = 10 ^ ( inGain / 20.0 );
 td.samples = td.samples ./ linGain;
+
+rmst = rms( td.samples );
+stdev = std( td.samples ); 
+skewd = skewness( td.samples ); 
 
 % Pre output path, group by folder
 group = fRoot(1:2);
