@@ -5,9 +5,9 @@ heightDesig = { 'S', 'T', 'V' };
 heightNames = { 'Short', 'Tall', 'Vende' };
 heightValues = [ 0.75, 3.0, 4 ];
 
-foamDesig = { 'NO', 'SO', '1O', '1C', '2C', '3O', '3C', '3P', '3S' }; 
-foamNames = { 'No Foam', '3/4” foam, open', '1” foam, open', '1” foam, closed', '2” foam, closed', '3” foam, open', '3” foam, closed', '3” foam, pink', '3” foam, stiff' };
-foamValues = [ 0, 0.75, 1, 1, 2, 3, 3, 3, 3 ];
+foamDesig = { 'NO', 'SO', '1O', '1C', '2C', '3O', '3C', '3P', '3S', '1S' }; 
+foamNames = { 'No Foam', '3/4” foam, open', '1” foam, open', '1” foam, closed', '2” foam, closed', '3” foam, open', '3” foam, closed', '3” foam, pink', '3” foam, stiff', '1” foam, stiff' };
+foamValues = [ 0, 0.75, 1, 1, 2, 3, 3, 3, 3, 1 ];
 
 meshParts = { 'IN', 'IF', 'IM', 'IL', 'ON', 'OF', 'OM', 'OL', 'MY', 'MN' };
 meshPartNames = { 'Inner None', 'Inner Fine', 'Inner Medium', 'Inner Large', 'Outer None', 'Outer Fine', 'Outer Medium', 'Outer Large', 'Mesh Yes', 'Mesh No' };
@@ -43,6 +43,7 @@ varInitLM{17} = { groupDesig{2}, heightDesig{1}, foamDesig{4}, meshDesig{24}, wi
 varInitLM{18} = { groupDesig{2}, heightDesig{1}, foamDesig{4}, meshDesig{24}, windDesig{3} };
 varInitLM{19} = { groupDesig{2}, heightDesig{1}, foamDesig{4}, meshDesig{1}, windDesig{2} };
 varInitLM{20} = { groupDesig{2}, heightDesig{1}, foamDesig{4}, meshDesig{1}, windDesig{3} };
+% Walk ons
 varInitLM{21} = { groupDesig{2}, heightDesig{2}, foamDesig{7}, meshDesig{27}, windDesig{2} };
 varInitLM{22} = { groupDesig{2}, heightDesig{2}, foamDesig{7}, meshDesig{27}, windDesig{3} };
 varInitLM{23} = { groupDesig{2}, heightDesig{2}, foamDesig{8}, meshDesig{27}, windDesig{2} };
@@ -53,7 +54,6 @@ varInitLM{27} = { groupDesig{2}, heightDesig{2}, foamDesig{9}, meshDesig{24}, wi
 varInitLM{28} = { groupDesig{2}, heightDesig{2}, foamDesig{9}, meshDesig{24}, windDesig{3} };
 varInitLM{29} = { groupDesig{2}, heightDesig{2}, foamDesig{9}, meshDesig{1}, windDesig{2} };
 varInitLM{30} = { groupDesig{2}, heightDesig{2}, foamDesig{9}, meshDesig{1}, windDesig{3} };
-
 
 % Small Macaron
 % Tall variants
@@ -70,4 +70,6 @@ varInitSM{9} = { groupDesig{1}, heightDesig{2}, foamDesig{1}, meshDesig{24}, win
 varInitSM{10} = { groupDesig{1}, heightDesig{2}, foamDesig{1}, meshDesig{24}, windDesig{3} };
 varInitSM{11} = { groupDesig{1}, heightDesig{2}, foamDesig{2}, meshDesig{1}, windDesig{2} };
 varInitSM{12} = { groupDesig{1}, heightDesig{2}, foamDesig{2}, meshDesig{1}, windDesig{3} };
+varInitSM{13} = { groupDesig{1}, heightDesig{2}, foamDesig{10}, meshDesig{1}, windDesig{2} };
+varInitSM{14} = { groupDesig{1}, heightDesig{2}, foamDesig{10}, meshDesig{1}, windDesig{3} };
 
