@@ -45,6 +45,14 @@ varInitLM{19} = { groupDesig{2}, heightDesig{1}, foamDesig{4}, meshDesig{1}, win
 varInitLM{20} = { groupDesig{2}, heightDesig{1}, foamDesig{4}, meshDesig{1}, windDesig{3} };
 varInitLM{21} = { groupDesig{2}, heightDesig{2}, foamDesig{7}, meshDesig{27}, windDesig{2} };
 varInitLM{22} = { groupDesig{2}, heightDesig{2}, foamDesig{7}, meshDesig{27}, windDesig{3} };
+varInitLM{23} = { groupDesig{2}, heightDesig{2}, foamDesig{8}, meshDesig{27}, windDesig{2} };
+varInitLM{24} = { groupDesig{2}, heightDesig{2}, foamDesig{8}, meshDesig{27}, windDesig{3} };
+varInitLM{25} = { groupDesig{2}, heightDesig{2}, foamDesig{8}, meshDesig{1}, windDesig{2} };
+varInitLM{26} = { groupDesig{2}, heightDesig{2}, foamDesig{8}, meshDesig{1}, windDesig{3} };
+varInitLM{27} = { groupDesig{2}, heightDesig{2}, foamDesig{9}, meshDesig{24}, windDesig{2} };
+varInitLM{28} = { groupDesig{2}, heightDesig{2}, foamDesig{9}, meshDesig{24}, windDesig{3} };
+varInitLM{27} = { groupDesig{2}, heightDesig{2}, foamDesig{9}, meshDesig{1}, windDesig{2} };
+varInitLM{28} = { groupDesig{2}, heightDesig{2}, foamDesig{9}, meshDesig{1}, windDesig{3} };
 
 
 % Small Macaron
