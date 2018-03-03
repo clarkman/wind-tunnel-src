@@ -38,6 +38,7 @@ set(gca,'YScale','log');
 
 aa = get( gca, 'XLim' );
 set( gca, 'XLim', [ aa(1), td1.sampleRate/2 ] );
+set( gca, 'YLim', [ 1e-16, 1e-4 ] );
 title( [ 'A:B = ', titl ] );
 set(gcf, 'OuterPosition', [ 400 500 1200 900 ] )
 set(gca,'FontSize',14)
@@ -47,3 +48,4 @@ pathRoot = [ outPath, '/', var1FileName, 'vs_', var2FileName ];
 print( gcf,'-djpeg100', [ pathRoot, 'AB.jpg' ] );
 print( gcf,'-dpdf', '-bestfit', [ pathRoot, 'AB.pdf' ] );
 
+close('all')
