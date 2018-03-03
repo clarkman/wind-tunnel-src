@@ -70,6 +70,9 @@ varInitSM{9} = { groupDesig{1}, heightDesig{2}, foamDesig{1}, meshDesig{24}, win
 varInitSM{10} = { groupDesig{1}, heightDesig{2}, foamDesig{1}, meshDesig{24}, windDesig{3} };
 varInitSM{11} = { groupDesig{1}, heightDesig{2}, foamDesig{2}, meshDesig{1}, windDesig{2} };
 varInitSM{12} = { groupDesig{1}, heightDesig{2}, foamDesig{2}, meshDesig{1}, windDesig{3} };
-varInitSM{13} = { groupDesig{1}, heightDesig{2}, foamDesig{10}, meshDesig{1}, windDesig{2} };
-varInitSM{14} = { groupDesig{1}, heightDesig{2}, foamDesig{10}, meshDesig{1}, windDesig{3} };
+% Walk ons
+varInitSM{13} = { groupDesig{1}, heightDesig{2}, foamDesig{10}, meshDesig{24}, windDesig{2} };
+varInitSM{14} = { groupDesig{1}, heightDesig{2}, foamDesig{10}, meshDesig{24}, windDesig{3} };
+varInitSM{15} = { groupDesig{1}, heightDesig{2}, foamDesig{10}, meshDesig{1}, windDesig{2} };
+varInitSM{16} = { groupDesig{1}, heightDesig{2}, foamDesig{10}, meshDesig{1}, windDesig{3} };
 
