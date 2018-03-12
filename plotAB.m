@@ -48,4 +48,4 @@ pathRoot = [ outPath, '/', var1FileName, 'vs_', var2FileName ];
 print( gcf,'-djpeg100', [ pathRoot, 'AB.jpg' ] );
 print( gcf,'-dpdf', '-bestfit', [ pathRoot, 'AB.pdf' ] );
 
-close('all')
+%close('all')

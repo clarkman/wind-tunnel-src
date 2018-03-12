@@ -1,12 +1,13 @@
 groupDesig = { 'SM', 'LM', 'TM', 'RC' }; 
 groupNames = { 'Small Macaron', 'Large Macaron', 'Truck Muffler', 'Rycote Cyclone' };
 
+heightDesig = { 'S', 'T', 'V' };
 heightNames = { 'Short', 'Tall', 'Vende' };
 heightValues = [ 0.75, 3.0, 4 ];
 
-foamDesig = { 'NO', 'SO', '1O', '1C', '2C', '3O', '3C', 'SF', '1F', '3F' }; 
-foamNames = { 'None Open', '3/4” foam open', '1” foam open', '1” foam closed', '2” foam closed', '3” foam open', '3” foam closed', '3/4” foam closed', '1” foam filled', '3” foam filled' };
-foamValues = [ 0, 0.75, 1, 1, 2, 3, 3, 0.75, 1, 3 ];
+foamDesig = { 'NO', 'SO', '1O', '1C', '2C', '3O', '3C', '3P', '3S', '1S', 'SF', '1F', '2F', '3F' }; 
+foamNames = { 'No Foam', '3/4” foam, open', '1” foam, open', '1” foam, closed', '2” foam, closed', '3” foam, open', '3” foam, closed', '3” foam, pink', '3” foam, stiff', '1” foam, stiff', '3/4” foam filled', '1” foam filled', '2” foam filled', '3” foam filled' };
+foamValues = [ 0, 0.75, 1, 1, 2, 3, 3, 3, 3, 1, 0.75, 1, 2, 3 ];
 
 meshParts = { 'IN', 'IF', 'IM', 'IL', 'ON', 'OF', 'OM', 'OL', 'MY', 'MN', '3L', 'DC' };
 meshPartNames = { 'Inner None', 'Inner Fine', 'Inner Medium', 'Inner Large', 'Outer None', 'Outer Fine', 'Outer Medium', 'Outer Large', 'Mesh Yes', 'Mesh No', '3 Layer', 'Dead Cat' };
@@ -53,6 +54,15 @@ varInitLM{27} = { groupDesig{2}, heightDesig{2}, foamDesig{9}, meshDesig{24}, wi
 varInitLM{28} = { groupDesig{2}, heightDesig{2}, foamDesig{9}, meshDesig{24}, windDesig{3} };
 varInitLM{29} = { groupDesig{2}, heightDesig{2}, foamDesig{9}, meshDesig{1}, windDesig{2} };
 varInitLM{30} = { groupDesig{2}, heightDesig{2}, foamDesig{9}, meshDesig{1}, windDesig{3} };
+varInitLM{31} = { groupDesig{2}, heightDesig{2}, foamDesig{12}, meshDesig{24}, windDesig{2} };
+varInitLM{32} = { groupDesig{2}, heightDesig{2}, foamDesig{12}, meshDesig{24}, windDesig{3} };
+varInitLM{33} = { groupDesig{2}, heightDesig{2}, foamDesig{13}, meshDesig{24}, windDesig{2} };
+varInitLM{34} = { groupDesig{2}, heightDesig{2}, foamDesig{13}, meshDesig{24}, windDesig{3} };
+varInitLM{35} = { groupDesig{2}, heightDesig{2}, foamDesig{14}, meshDesig{24}, windDesig{2} };
+varInitLM{36} = { groupDesig{2}, heightDesig{2}, foamDesig{14}, meshDesig{24}, windDesig{3} };
+varInitLM{37} = { groupDesig{2}, heightDesig{2}, foamDesig{14}, meshDesig{5}, windDesig{2} };
+varInitLM{38} = { groupDesig{2}, heightDesig{2}, foamDesig{14}, meshDesig{5}, windDesig{3} };
+
 
 % Small Macaron
 % Tall variants
@@ -74,4 +84,19 @@ varInitSM{13} = { groupDesig{1}, heightDesig{2}, foamDesig{10}, meshDesig{24}, w
 varInitSM{14} = { groupDesig{1}, heightDesig{2}, foamDesig{10}, meshDesig{24}, windDesig{3} };
 varInitSM{15} = { groupDesig{1}, heightDesig{2}, foamDesig{10}, meshDesig{1}, windDesig{2} };
 varInitSM{16} = { groupDesig{1}, heightDesig{2}, foamDesig{10}, meshDesig{1}, windDesig{3} };
+varInitSM{17} = { groupDesig{1}, heightDesig{2}, foamDesig{11}, meshDesig{1}, windDesig{2} };
+varInitSM{17} = { groupDesig{1}, heightDesig{2}, foamDesig{11}, meshDesig{1}, windDesig{3} };
+
+
+varInitTM{1} = { groupDesig{3}, heightDesig{3}, foamDesig{5}, meshDesig{18}, windDesig{2} };
+varInitTM{2} = { groupDesig{3}, heightDesig{3}, foamDesig{5}, meshDesig{18}, windDesig{3} };
+varInitTM{3} = { groupDesig{3}, heightDesig{3}, foamDesig{4}, meshDesig{18}, windDesig{2} };
+varInitTM{4} = { groupDesig{3}, heightDesig{3}, foamDesig{4}, meshDesig{18}, windDesig{3} };
+varInitTM{5} = { groupDesig{3}, heightDesig{3}, foamDesig{5}, meshDesig{33}, windDesig{2} };
+varInitTM{6} = { groupDesig{3}, heightDesig{3}, foamDesig{5}, meshDesig{33}, windDesig{3} };
+varInitTM{7} = { groupDesig{3}, heightDesig{3}, foamDesig{5}, meshDesig{33}, windDesig{2} };
+varInitTM{8} = { groupDesig{3}, heightDesig{3}, foamDesig{4}, meshDesig{33}, windDesig{3} };
+
+varInitRC{1} = { groupDesig{3}, heightDesig{3}, foamDesig{1}, meshDesig{12}, windDesig{2} };
+varInitRC{1} = { groupDesig{3}, heightDesig{3}, foamDesig{1}, meshDesig{1}, windDesig{2} };
 

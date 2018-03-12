@@ -25,3 +25,6 @@ plotAB( varInitSM{8}, varInitSM{12}, 12, '60 Hz, Small Macaron, Tall, Foam, Mesh
 plotAB( varInitSM{5}, varInitSM{11}, 13, '45 Hz, Small Macaron, Foam, No Mesh, Short .vs. Tall' ); %13
 
 plotAB( varInitSM{6}, varInitSM{12}, 14, '60 Hz, Small Macaron, Foam, No Mesh, Short .vs. Tall' ); %14
+
+plotAB( varInitSM{1}, varInitSM{3}, 15, '60 Hz, Small Macaron, Foam, No Mesh, Short .vs. Tall' ); %14
+
