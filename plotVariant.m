@@ -2,7 +2,7 @@ function [ rmst, stdev, skewd ] = plotVariant( variant )
 
 % Load audio file
 [ f, fRoot ] = getFileNameRoot( variant );
-inPath  = '/Users/cuz/Desktop/Projects/SST/Wind/WindTunnel/2018-02-27/audio/';
+inPath  = '/Users/cuz/Desktop/Projects/SST/Wind/WindTunnel/2018-03-02/audio/';
 var1FName = [ inPath, fRoot, '*.flac' ]
 fileName1 = dir( var1FName );
 td = loadWavTD( [ inPath, fileName1.name ] );
@@ -18,7 +18,7 @@ skewd = skewness( td.samples );
 
 % Pre output path, group by folder
 group = fRoot(1:2);
-outPath  = [ '/Users/cuz/Desktop/Projects/SST/Wind/WindTunnel/2018-02-27/', group, '/' ];
+outPath  = [ '/Users/cuz/Desktop/Projects/SST/Wind/WindTunnel/2018-03-02/', group, '/' ];
 
 % Time series
 tsName = [ outPath, fRoot, '.ts.jpg' ];

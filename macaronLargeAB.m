@@ -82,5 +82,11 @@ plotAB( varInitLM{3}, varInitLM{29}, 41, '45 Hz, Large Macaron, Tall, No Mesh, 3
 
 plotAB( varInitLM{4}, varInitLM{30}, 42, '60 Hz, Large Macaron, Tall, No Mesh, 3inch Grey .vs. Stiff Foam' ); %42
 
+plotAB( varInitLM{1}, varInitLM{2}, 1, 'Large Macaron, Tall, 3inch Foam, Mesh, 45 Hz .vs. 60 Hz' ); %43
+
+plotAB( varInitLM{3}, varInitLM{4}, 2, 'Large Macaron, Tall, 3inch Foam, No Mesh, 45 Hz .vs. 60 Hz' ); %44
+
+
+
 
 

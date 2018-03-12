@@ -17,8 +17,11 @@ while 1
   next60 = fgetl(fid);
   nextl = fgetl(fid);
   rowth = rowth + 1;
-  if nextl == -1
-  	break
+  if isempty(next45) == 1
+    break
+  end
+ if next45 == -1
+    break
   end
   % if isempty( nextl )
   % 	continue
@@ -33,6 +36,7 @@ while 1
   commas = strfind( next45, ',' );
   spaces = strfind( next45, ' ' );
   parens = strfind( next45, ')' );
+  next45
   idx  = next45(spaces(3)+1:commas(3)-1);
   abName = next45(spaces(4)+9:parens(1)-3);
 
@@ -74,6 +78,9 @@ while 1
   fprintf( fidw, 'A:B #%s, %s\n', idx, abName );
   fprintf( fidw, '\\end_layout\n\n' );
 
+  fprintf( fidw, '#BEG%d\n', rowth );
+  fprintf( fidw, '#FIN%d\n', rowth );
+
   fprintf( fidw, '\\begin_layout Standard\n' );
   fprintf( fidw, '\\align center\n' );
   fprintf( fidw, '\\begin_inset Graphics\n' );
@@ -83,7 +90,6 @@ while 1
   fprintf( fidw, '        rotateAngle -90\n\n' );
 
   fprintf( fidw, '\\end_inset\n\n\n' );
-
 
   fprintf( fidw, '\\end_layout\n\n' );
 

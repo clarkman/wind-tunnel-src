@@ -21,12 +21,12 @@ end
 inGain = sscanf( inGainStr(1:inGaindB(1)-1), '%f' );
 if numbars > 6 
 	if strcmp( hzStr, '00' )
-		outGainStr = fName(ubars(7)+1:end)
+		outGainStr = fName(ubars(7)+1:end);
 		outGaindB = strfind( outGainStr, 'dBoutput' );
 		if isempty( outGaindB )
 			error('File name format error (outGain)')
 		end
-		outGain = sscanf( outGainStr(1:outGaindB(1)-1), '%f' )
+		outGain = sscanf( outGainStr(1:outGaindB(1)-1), '%f' );
 	else 
 		error('File name format error (hz00)')
 	end

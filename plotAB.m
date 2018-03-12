@@ -3,8 +3,8 @@ function idx =  plotAB( var1, var2, idx, titl )
 [ f, var1FileName ] = getFileNameRoot(var1);
 [ f, var2FileName ] = getFileNameRoot(var2);
 
-inPath  = '/Users/cuz/Desktop/Projects/SST/Wind/WindTunnel/2018-02-27/audio/';
-outPath = '/Users/cuz/Desktop/Projects/SST/Wind/WindTunnel/2018-02-27/AB/';
+inPath  = '/Users/cuz/Desktop/Projects/SST/Wind/WindTunnel/2018-03-02/audio/';
+outPath = '/Users/cuz/Desktop/Projects/SST/Wind/WindTunnel/2018-03-02/AB/';
 
 % Find and load files
 var1FName = [ inPath, var1FileName, '*.flac' ];
