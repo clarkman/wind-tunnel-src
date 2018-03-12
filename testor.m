@@ -124,5 +124,7 @@ varInitTM{9} = { groupDesig{3}, heightDesig{3}, foamDesig{1}, meshDesig{1}, wind
 varInitTM{10} = { groupDesig{3}, heightDesig{3}, foamDesig{1}, meshDesig{1}, windDesig{3} };
 
 varInitRC{1} = { groupDesig{4}, heightDesig{3}, foamDesig{1}, meshDesig{12}, windDesig{2} };
-varInitRC{1} = { groupDesig{4}, heightDesig{3}, foamDesig{1}, meshDesig{1}, windDesig{2} };
+varInitRC{2} = { groupDesig{4}, heightDesig{3}, foamDesig{1}, meshDesig{12}, windDesig{3} };
+varInitRC{3} = { groupDesig{4}, heightDesig{3}, foamDesig{1}, meshDesig{1}, windDesig{2} };
+varInitRC{4} = { groupDesig{4}, heightDesig{3}, foamDesig{1}, meshDesig{1}, windDesig{3} };
 
