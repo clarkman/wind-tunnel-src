@@ -7,12 +7,12 @@ inPath  = '/Users/cuz/Desktop/Projects/SST/Wind/WindTunnel/2018-03-02/audio/';
 outPath = '/Users/cuz/Desktop/Projects/SST/Wind/WindTunnel/2018-03-02/AB/';
 
 % Find and load files
-var1FName = [ inPath, var1FileName, '*.flac' ];
+var1FName = [ inPath, var1FileName, '*.flac' ]
 var2FName = [ inPath, var2FileName, '*.flac' ];
-fileName1 = dir( var1FName );
+fileName1 = dir( var1FName )
 td1 = loadWavTD( [ inPath, fileName1.name ] );
 [ group1, height1, foam1, gmesh1, hz1, dn1, inGain1, outGain1 ] = parseFileName( fileName1.name );
-fileName2 = dir( var2FName );
+fileName2 = dir( var2FName )
 td2 = loadWavTD( [ inPath, fileName2.name ] );
 [ group2, height2, foam2, gmesh2, hz2, dn2, inGain2, outGain2 ] = parseFileName( fileName2	.name );
 

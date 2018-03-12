@@ -62,6 +62,10 @@ varInitLM{35} = { groupDesig{2}, heightDesig{2}, foamDesig{14}, meshDesig{24}, w
 varInitLM{36} = { groupDesig{2}, heightDesig{2}, foamDesig{14}, meshDesig{24}, windDesig{3} };
 varInitLM{37} = { groupDesig{2}, heightDesig{2}, foamDesig{14}, meshDesig{5}, windDesig{2} };
 varInitLM{38} = { groupDesig{2}, heightDesig{2}, foamDesig{14}, meshDesig{5}, windDesig{3} };
+varInitLM{39} = { groupDesig{2}, heightDesig{2}, foamDesig{13}, meshDesig{5}, windDesig{2} };
+varInitLM{40} = { groupDesig{2}, heightDesig{2}, foamDesig{13}, meshDesig{5}, windDesig{3} };
+varInitLM{41} = { groupDesig{2}, heightDesig{2}, foamDesig{12}, meshDesig{5}, windDesig{2} };
+varInitLM{42} = { groupDesig{2}, heightDesig{2}, foamDesig{12}, meshDesig{5}, windDesig{3} };
 
 
 % Small Macaron

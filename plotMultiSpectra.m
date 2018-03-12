@@ -2,18 +2,33 @@ function plotMultiSpectra( base, fftL, titl, varargin )
 
 numCmps = length(varargin);
 
+if isa( base, 'TimeData')
+  tdObj = true;
+else
+  tdObj = false;
+end
+
 figure;
 
 lgnd = cell( numCmps, 1 );
-
-[ td, fName ] = loadVariant( base );
+if tdObj
+  td = base;
+  fName = td.title;
+else
+  [ td, fName ] = loadVariant( base );
+end
 freq = spectrum( td, fftL, 1 );
 fv = freqVector( freq );
 plot( freq );
 lgnd{1} = fName;
 hold on;
 for n = 1 : numCmps
-  [ multi, fName ] = loadVariant( varargin{n} );
+  if tdObj
+  	multi = varargin{n};
+  	fName = multi.title;
+  else
+    [ multi, fName ] = loadVariant( varargin{n} );
+  end
   lgnd{n+1} = fName;
   plot( spectrum( multi, fftL, 1 ) );
 end
