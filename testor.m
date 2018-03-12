@@ -105,7 +105,9 @@ varInitSM{17} = { groupDesig{1}, heightDesig{2}, foamDesig{11}, meshDesig{1}, wi
 varInitSM{18} = { groupDesig{1}, heightDesig{2}, foamDesig{11}, meshDesig{1}, windDesig{3} };
 
 varInitSM{19} = { groupDesig{1}, heightDesig{2}, foamDesig{2}, meshDesig{18}, windDesig{2} };
-varInitSM{20} = { groupDesig{1}, heightDesig{2}, foamDesig{18}, meshDesig{18}, windDesig{3} };
+varInitSM{20} = { groupDesig{1}, heightDesig{2}, foamDesig{2}, meshDesig{18}, windDesig{3} };
+varInitSM{21} = { groupDesig{1}, heightDesig{2}, foamDesig{18}, meshDesig{18}, windDesig{2} };
+varInitSM{22} = { groupDesig{1}, heightDesig{2}, foamDesig{18}, meshDesig{18}, windDesig{3} };
 
 
 varInitTM{1} = { groupDesig{3}, heightDesig{3}, foamDesig{5}, meshDesig{18}, windDesig{2} };
