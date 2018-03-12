@@ -5,9 +5,9 @@ heightDesig = { 'S', 'T', 'V' };
 heightNames = { 'Short', 'Tall', 'Vende' };
 heightValues = [ 0.75, 3.0, 4 ];
 
-foamDesig = { 'NO', 'SO', '1O', '1C', '2C', '3O', '3C', '3P', '3S', '1S', 'SF', '1F', '2F', '3F', '1FS', '2FS', '3FS', 'SFS' }; 
-foamNames = { 'No Foam', '3/4” foam, open', '1” foam, open', '1” foam, closed', '2” foam, closed', '3” foam, open', '3” foam, closed', '3” foam, pink', '3” foam, stiff', '1” foam, stiff', '3/4” foam filled', '1” foam filled', '2” foam filled', '3” foam filled' , '1” foam filled stiff', '2” foam filled stiff', '3” foam filled stiff', '0.75” foam filled stiff' };
-foamValues = [ 0, 0.75, 1, 1, 2, 3, 3, 3, 3, 1, 0.75, 1, 2, 3, 1, 2, 3, 0.75 ];
+foamDesig = { 'NO', 'SO', '1O', '1C', '2C', '3O', '3C', '3P', '3S', '1S', 'SF', '1F', '2F', '3F', '1FS', '2FS', '3FS', 'SFS', 'SFO' }; 
+foamNames = { 'No Foam', '3/4” foam, open', '1” foam, open', '1” foam, closed', '2” foam, closed', '3” foam, open', '3” foam, closed', '3” foam, pink', '3” foam, stiff', '1” foam, stiff', '3/4” foam filled', '1” foam filled', '2” foam filled', '3” foam filled' , '1” foam filled stiff', '2” foam filled stiff', '3” foam filled stiff', '0.75” foam filled stiff', 'olson out' };
+foamValues = [ 0, 0.75, 1, 1, 2, 3, 3, 3, 3, 1, 0.75, 1, 2, 3, 1, 2, 3, 0.75, 0.5 ];
 
 meshParts = { 'IN', 'IF', 'IM', 'IL', 'ON', 'OF', 'OM', 'OL', 'MY', 'MN', '3L', 'DC' };
 meshPartNames = { 'Inner None', 'Inner Fine', 'Inner Medium', 'Inner Large', 'Outer None', 'Outer Fine', 'Outer Medium', 'Outer Large', 'Mesh Yes', 'Mesh No', '3 Layer', 'Dead Cat' };
@@ -108,6 +108,8 @@ varInitSM{19} = { groupDesig{1}, heightDesig{2}, foamDesig{2}, meshDesig{18}, wi
 varInitSM{20} = { groupDesig{1}, heightDesig{2}, foamDesig{2}, meshDesig{18}, windDesig{3} };
 varInitSM{21} = { groupDesig{1}, heightDesig{2}, foamDesig{18}, meshDesig{18}, windDesig{2} };
 varInitSM{22} = { groupDesig{1}, heightDesig{2}, foamDesig{18}, meshDesig{18}, windDesig{3} };
+varInitSM{23} = { groupDesig{1}, heightDesig{2}, foamDesig{19}, meshDesig{18}, windDesig{2} };
+varInitSM{24} = { groupDesig{1}, heightDesig{2}, foamDesig{19}, meshDesig{18}, windDesig{3} };
 
 
 varInitTM{1} = { groupDesig{3}, heightDesig{3}, foamDesig{5}, meshDesig{18}, windDesig{2} };
