@@ -36,7 +36,7 @@ set(gca,'XScale','log');
 set(gca,'YScale','log');
 set(gca,'XLim',[fv(1),fv(end)])
 %set(gca,'YLim',[1e-16, 1e-4]);
-set(gca,'YLim',[1e-8, 1e-2]);
+set(gca,'YLim',[1e-7, 1e-0]);
 set(gcf, 'OuterPosition', [ 400 500 1200 900 ] );
 legend(lgnd, 'Interpreter','none');
 title( titl );
